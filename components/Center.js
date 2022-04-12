@@ -49,8 +49,6 @@ export default function Center() {
     }).catch((error) => console.log("Oops!! Something went wrong", error))
   }, [spotifyApi, playlistId])
 
-  console.log("playlist", playlist)
-
   return (
     <div className="flex-grow text-white overflow-y-scroll scrollbar-hide h-screen">
       <header className="absolute top-5 right-8">

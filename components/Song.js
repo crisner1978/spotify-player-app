@@ -18,8 +18,8 @@ const Song = ({ item, order }) => {
 
   return (
     <div onClick={playSong}
-      className="grid grid-cols-2 rounded-md py-2 px-5 text-gray-400 
-    hover:bg-neutral-600/60 hover:text-white active:bg-neutral-500"
+      className={`grid grid-cols-2 rounded-md py-2 px-5 text-gray-400 
+    hover:bg-neutral-600/60 hover:text-white ${songId === item.track.id && "bg-neutral-500"} }`}
     >
       <div className="flex items-center space-x-4">
         <p>{order + 1}</p>
